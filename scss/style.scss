@@ -1,0 +1,84 @@
+// Color Variables
+// Primary colors
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+// Secondary Colors
+$dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$light-gray:hsl(0, 0%, 98%);
+
+// Google font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  background-color: $light-gray;
+}
+
+#header {
+  div {
+    text-align: center;
+    padding: 2rem;
+    margin: 4rem 0;
+
+    .lead {
+      font-weight: 200;
+    }
+
+    .secondary {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: $grayish-blue;
+    }
+  }
+}
+
+#cards {
+  .card {
+    border-radius: 5px;
+    margin: auto auto;
+    width: 80%;
+    box-shadow: 0px 24px 54px -20px rgba(0, 0, 0, 0.22);
+    padding: 1.5rem 2rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  .supervisor-card {
+    border-top: 3px solid $cyan;
+  }
+
+  .team-builder-card {
+    border-top: 3px solid $red;
+  }
+
+  .karma-card {
+    border-top: 3px solid $orange;
+  }
+
+  .calculator-card {
+    border-top: 3px solid $blue;
+  }
+
+  .card-img {
+    margin-top: 1rem;
+    margin-left: auto;
+    position: relative;
+    left: 10rem;
+  }
+}
+
+// Media Queries
+@import 'media';
